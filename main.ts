@@ -28,6 +28,14 @@ modules.button1.onEvent(jacdac.ButtonEvent.Down, function () {
     neopixel.colors(NeoPixelColors.Green)
     )
 })
+modules.button2.onEvent(jacdac.ButtonEvent.Down, function () {
+    matrix.scrollText(
+    "Button 2 ",
+    24,
+    0,
+    neopixel.colors(NeoPixelColors.Red)
+    )
+})
 clicks.onDoubleClick(Button.B, function () {
     radio.sendNumber(1)
 })
@@ -37,14 +45,6 @@ input.onButtonPressed(Button.A, function () {
     2,
     0,
     neopixel.colors(NeoPixelColors.Orange)
-    )
-})
-modules.button2.onEvent(jacdac.ButtonEvent.Down, function () {
-    matrix.scrollText(
-    "Button 2 ",
-    24,
-    0,
-    neopixel.colors(NeoPixelColors.Red)
     )
 })
 let lightLevel = 0
